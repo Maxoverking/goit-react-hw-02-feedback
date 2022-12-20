@@ -21,12 +21,12 @@ state = {
     })
   }
 
-  countTotalFeedback = () => {
+  countTotalFeedback () {
     const { good, neutral, bad } = this.state;
     let result = good + neutral + bad; 
     return result;
   }
-  positivePercentageCount = () => {
+  positivePercentageCount () {
     const { good } = this.state;
     const result = this.countTotalFeedback();
     const percentage = (good * 100) / result;
