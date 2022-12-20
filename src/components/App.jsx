@@ -32,7 +32,7 @@ state = {
     const percentage = (good * 100) / result;
     return Math.round(percentage) ;
   }
-  
+
   render() {
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
